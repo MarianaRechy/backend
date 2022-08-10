@@ -1,0 +1,16 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto de node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ejercicios.js",
+    "start": "index.js"
+  },
+  "author": "rechy.mr@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
