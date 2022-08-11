@@ -1,3 +1,5 @@
+
+/*
 console.log("hola mundo")
 console.log(process.argv)
 
@@ -6,8 +8,6 @@ console.log(process.argv)
 // process.argv, y si existe que me imprima “Bienvenido y el nombre”
 // SI NO, imprimir “Afuera de aqui”
 
-
-/*
 // Esta es mi solución
 let welcome = (name)=>{
     if(name != undefined){
@@ -19,7 +19,7 @@ let welcome = (name)=>{
 
 result= welcome(process.argv[2])
 console.log(result);
-*/
+
 
 // Esta es la solución optima
 const nombre = process.argv[2]
@@ -33,3 +33,4 @@ const printName = (nombre) => {
 }
 
 printName(nombre)
+*/
