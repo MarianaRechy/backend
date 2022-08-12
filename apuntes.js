@@ -59,3 +59,43 @@ Se identifica en los archivos como SYNC EN FILESYSTEM
 
 Recursividad
 Tenemos que decirle cuando se tiene que detener
+Funciones generator
+Hacer contadores
+
+
+
+
+/**
+ //!Asyn Await
+ * Va a cambiar la forma de ejecutar la forma de ejecutarse nuestras promesas
+ * Async Await
+ * 
+ * Async -> Cuando vamos a hacer una funcion asyncrona
+ * Await -> Va a ESPERAR una promesas. -> 5 segundos
+ * 
+ * Reglas:
+ * Async va en la declaracion de la funcion, se esta declarando como asincrona
+ * Await va dentro de esa funcion que se declaro como asincrona
+ * 
+ * No puedo usar await sin el async.
+ * 
+ * Sintaxis:
+ */
+
+
+// Sintaxis
+// Arrow function
+
+// const funcionAsincrona = async () => {
+
+//   // Todo lo de adentro va a ser asincrono
+//   // Que se puede usar Await aqui adentro
+//   // Que el retorno de esta funcion va a ser una promesa
+// }
+
+// // Funcion normal
+// async function asincronidadFuncion() {
+//   // Todo lo de adentro va a ser asincrono
+//   // Que se puede usar Await aqui adentro
+//   // Que el retorno de esta funcion va a ser una promesa
+// }
