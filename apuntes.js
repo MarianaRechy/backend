@@ -1,6 +1,5 @@
 
 /*
-
 DESTRUCTURACION
 
 De objetos{}
