@@ -79,19 +79,27 @@ const decorarPastel = (pastelADecorar) => {
 
 // Async - Await
 const recetaPorLeer = async () => {
-    const recetaLeida = await leerReceta({...pastel})
-  
-    // Awaits
-    // Se esta esperando
-    console.log("recetaLeida", recetaLeida)
+    try{
+        const recetaLeida = await leerReceta({...pastel})
+        const ingredientesConseguidos = await conseguirIngredientes({...recetaLeida})
+        const masaPreparada = await prepararMasa ({...ingredientesConseguidos})
+        const pastelHorneado = await horenarPastel({...masaPreparada})
+        const pastelDecorado = await decorarPastel({...pastelHorneado})
+        console.log("PastelListo",pastelDecorado)
 
-         ingredientesPorConseguir = async () =>{
-            const ingredientesConseguidos = await conseguirIngredientes({...recetaLeida})
-                // Awaits
-                // Se esta esperando
-                console.log(ingredientesConseguidos)
-        }
-    
-  }
-  
+        return pastelDecorado
+      } catch(err){
+        console.log("err",err)
+      }
+
+    }
+
   recetaPorLeer()
+  .then((pastelDecorado) =>{
+    console.log("pastelDecorado en el then",pastelDecorado)
+  })
+  .catch((pastelDecorado)=>{
+    console.log("err",err)
+  })
+
+
